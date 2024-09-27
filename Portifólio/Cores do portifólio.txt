@@ -1,0 +1,10 @@
+Cores do site:
+
+
+Primária -> #eeb188
+
+Secundária -> #eedab8 laranja mais claro 
+#63339f roxo < ----- 
+
+Accent -> #d1cc94
+
