@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EDEDED;
+}
+
+header {
+    background-color: #fdc7a3;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.header_buttons button {
+    border-radius: 30px;
+    background-color: #932224;
+    width: 86px;
+    height: 6vh;
+    border: none;
+}
+
+.header_buttons a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 60%;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0; 
+}
+
+body.dark-mode header {
+       background-color: #fdc7a3;
+    ; 
+}
+
+body.dark-mode .header_buttons button {
+    background-color: #932224; 
+    color: #fffefe; 
+}
+
+body.dark-mode #centro_informacoes {
+    background-color: #f4a361cc; 
+    color: #e0e0e0; 
+}
+
+body.dark-mode .left-box, 
+body.dark-mode .right-box {
+    background-color: #754230; 
+    color: #e0e0e0; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+
+body.dark-mode a {
+    color: #a8dadc; 
+}
+
+
+body.dark-mode footer {
+    color: #e0e0e0; 
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 40px;
+    margin-top: 5px; 
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    bottom: 5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #932224;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.vazio {
+    width: 50px;
+}
+main {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px 0;
+    margin-left:500px;
+}
+
+main h2 {
+    font-size: 30px;
+    color: #5c5b5b;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card {
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.orange {
+    background-color: #f4a261;
+    padding: 20px;
+}
+
+.red {
+    background-color: #8b2c2c;
+    padding: 20px;
+    
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: none; 
+    border-radius: 10px;
+}
+
+.carousel img.active {
+    display: block; 
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+#curriculo{
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    ul {
+        margin-left: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header_buttons button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    main {
+        margin: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 30px;
+        height: auto;
+    }
+
+    ul {
+        margin-left: 50%;
+    }
+
+    .header_buttons button {
+        width: 80px;
+    }
+
+    main {
+        max-width: 600px;
+        margin: 30px auto;
+    }
+
+    .projects {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .project-card {
+        width: 45%;
+    }
+
+    .carousel-container {
+        max-width: 90%;
+    }
+}

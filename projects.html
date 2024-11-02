@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="Logo preta.png" alt="Logo">
+            </a>
+        </div>
+        <ul>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+            <li>
+                <div class="header_buttons">
+                    <button><a href="about.html">About</a></button>
+                </div>
+            </li>
+            <li class="vazio"></li>
+            <li>
+                <div class="header_buttons">
+                    <button><a href="contact.html">Contact</a></button>
+                </div>
+            </li>
+            <li class="vazio"></li>
+            <li>
+                <div class="header_buttons">
+                    <button><a href="projects.html">Project</a></button>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h2>Alguns dos meus projetos</h2>
+        <section class="projects">
+            <!-- Primeiro Carrossel -->
+            <div class="project-card orange">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="pagina inicial ogani.png" alt="Projeto 1">
+                        <img src="página shop ogani.png" alt="Projeto 2">
+                        <img src="pagina contact ogani.png" alt="Projeto 3">
+                    </div>
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- Segundo Carrossel -->
+            <div class="project-card red">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="página inicial visioneyes.png" alt="Projeto 1">
+                        <img src="página sobre visioneyes.png" alt="Projeto 2">
+                        <img src="pagina de cadastro visioneyes.png" alt="Projeto 3">
+                    </div>
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- Terceiro Projeto Sem Carrossel -->
+            <div class="project-card orange">
+                <img id="curriculo"src="curriculo.png" alt="Currículo">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados | Sophia de Fátima</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
